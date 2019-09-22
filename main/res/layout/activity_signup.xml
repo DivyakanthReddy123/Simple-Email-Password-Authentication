@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/remail"
+        android:inputType="textEmailAddress"
+        android:layout_centerInParent="true"
+
+        android:hint="Enter Email"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rpassword"
+        android:inputType="textPassword"
+        android:layout_below="@+id/remail"
+        android:hint="Enter Password"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/rcpass"
+        android:layout_below="@+id/rpassword"
+        android:hint="Confirm Password"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/regBtn"
+        android:layout_below="@+id/rcpass"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/alreadyAcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="96dp"
+        android:text="Already Have an Account"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+</RelativeLayout>
